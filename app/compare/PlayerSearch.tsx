@@ -52,7 +52,7 @@ export default React.memo(function PlayerSearch({ onSelect, placeholder = "Selec
                 <CommandItem
                   key={player.id}
                   onSelect={() => {
-                    setSelectedPlayer(player)
+                    setSelectedPlayer(player as Player)
                     setOpen(false)
                     onSelect(player.id.toString())
                   }}
